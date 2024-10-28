@@ -21,7 +21,7 @@ LRTJPay is a mobile-optimized web application that enables users to manage their
 
 ```
 
-lrt-pay/
+lrtj-pay/
 ├── src/
 │   ├── app/                # Next.js app directory
 │   │   ├── layout.jsx      # Root layout component
@@ -34,8 +34,7 @@ lrt-pay/
 │   ├── store/              # Redux store configuration
 │   │   └── user/           # User-related redux files
 │   └── helpers/            # Utility functions
-├── public/                 # Static assets
-└── config files            # Configuration files
+└── public/                 # Static assets
 
 ```
 
