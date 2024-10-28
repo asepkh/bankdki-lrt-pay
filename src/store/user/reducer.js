@@ -3,6 +3,7 @@ import * as constants from "./constants";
 const INITIAL_STATE = {
   isLoggedIn: false,
   phoneNumber: null,
+  screen: "registration",
 };
 
 const reducer = (state = INITIAL_STATE, action) => {

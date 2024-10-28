@@ -7,9 +7,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      screens: {
+        mobile: "375px",
+      },
+      fontFamily: {
+        sans: ["var(--font-plus-jakarta-sans)"],
       },
     },
   },
