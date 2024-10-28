@@ -1,0 +1,30 @@
+[
+  {
+    "name": "jakone-mobile",
+    "title": "JakOne Mobile",
+    "screen_title": "Via JakOne Mobile",
+    "description": "No administration fees via the JakOne Mobile Mobile App",
+    "icon": "/mobile.svg"
+  },
+  {
+    "name": "atm-bank-dki",
+    "title": "ATM Bank DKI",
+    "screen_title": "Via ATM Bank DKI",
+    "description": "Top up Martipay from nearest Bank DKI ATM",
+    "icon": "/atm.svg"
+  },
+  {
+    "name": "other-bank",
+    "title": "Other Bank",
+    "screen_title": "Via Transfer Other Bank",
+    "description": "Transfer anytime from your favourite Indonesia bank",
+    "icon": "/other-bank.svg"
+  },
+  {
+    "name": "debit-card",
+    "title": "Debit Card",
+    "screen_title": "Via Debit/Credit Card",
+    "description": "Top up online using your debit card",
+    "icon": "/debit-card.svg"
+  }
+]

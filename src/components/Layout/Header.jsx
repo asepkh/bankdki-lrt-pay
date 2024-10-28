@@ -2,7 +2,14 @@ import { Fragment } from "react";
 
 import cn from "@/helpers/cn";
 
-const Header = ({ title, className, divider = false, onBack }) => {
+const Header = ({
+  title,
+  className,
+  divider = false,
+  onBack,
+  backIcon = "/arrow-left.svg",
+  backIconClassName,
+}) => {
   return (
     <Fragment>
       <header
@@ -12,7 +19,11 @@ const Header = ({ title, className, divider = false, onBack }) => {
         )}
       >
         <button onClick={onBack}>
-          <img src="/arrow-left.svg" alt="arrow-left" className="size-[30px]" />
+          <img
+            src={backIcon}
+            alt="arrow-left"
+            className={cn("size-[30px]", backIconClassName)}
+          />
         </button>
         {title}
       </header>

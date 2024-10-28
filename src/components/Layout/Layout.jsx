@@ -11,6 +11,8 @@ const Layout = ({
   className,
   children,
   onBack = () => {},
+  backIcon = "/arrow-left.svg",
+  backIconClassName,
 }) => {
   return (
     <Fragment>
@@ -19,6 +21,8 @@ const Layout = ({
         className={headerClassName}
         divider={headerDivider}
         onBack={onBack}
+        backIcon={backIcon}
+        backIconClassName={backIconClassName}
       />
       <div className={cn("flex flex-col", className)}>{children}</div>
     </Fragment>

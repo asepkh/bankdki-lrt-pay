@@ -13,6 +13,10 @@ module.exports = {
       },
       fontFamily: {
         sans: ["var(--font-plus-jakarta-sans)"],
+        inter: ["var(--font-inter)"],
+      },
+      backgroundImage: {
+        menu: "linear-gradient(270deg, #C0A720 0%, #E21A1A 100%)",
       },
     },
   },
