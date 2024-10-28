@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+import Button from "@/components/Button";
 import cn from "@/helpers/cn";
 
 const InputPhoneNumberOTP = ({ onSubmit }) => {
@@ -31,19 +32,19 @@ const InputPhoneNumberOTP = ({ onSubmit }) => {
           onChange={handlePhoneNumberChange}
           onKeyDown={handleKeyDown}
           className={cn(
-            "w-full border border-[#D4431C] p-4 text-base",
+            "w-full border border-[#D4431C] p-4 text-sm text-[#E21A1A]",
             "focus:outline-none focus:ring-0",
           )}
         />
-        <button
+        <Button
           className={cn(
             "absolute right-4 top-1/2 -translate-y-1/2 rounded-[5px] bg-[#E21A1A] px-[9px] py-[6px] text-xs text-white",
-            "hover:bg-[#E21A1A] focus:outline-none focus:ring-0",
+            "!h-fit !w-fit hover:bg-[#E21A1A] focus:outline-none focus:ring-0",
           )}
           onClick={() => onSubmit(phoneNumber)}
         >
           Kirim OTP
-        </button>
+        </Button>
       </div>
     </div>
   );

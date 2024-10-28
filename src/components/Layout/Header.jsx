@@ -2,17 +2,17 @@ import { Fragment } from "react";
 
 import cn from "@/helpers/cn";
 
-const Header = ({ title, className, divider = false }) => {
+const Header = ({ title, className, divider = false, onBack }) => {
   return (
     <Fragment>
       <header
         className={cn(
-          "flex items-center gap-[10px] p-5 text-lg font-semibold",
+          "flex items-center gap-[14px] p-5 text-lg font-semibold",
           className,
         )}
       >
-        <button>
-          <img src="/arrow-left.svg" alt="arrow-left" />
+        <button onClick={onBack}>
+          <img src="/arrow-left.svg" alt="arrow-left" className="size-[30px]" />
         </button>
         {title}
       </header>

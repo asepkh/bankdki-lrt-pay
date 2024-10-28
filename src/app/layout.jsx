@@ -20,7 +20,7 @@ const RootLayout = ({ children }) => {
     <html lang="en" className={plusJakartaSans.variable}>
       <Provider>
         <body className="flex items-center justify-center bg-[#E1E2EF]">
-          <main className="flex h-fit min-h-[700px] w-full max-w-screen-mobile flex-col rounded-t-[20px] bg-white">
+          <main className="flex size-fit min-h-[700px] w-full max-w-screen-mobile flex-col bg-white pb-4">
             {children}
           </main>
         </body>
