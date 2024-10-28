@@ -4,9 +4,7 @@ A Next.js application for LRT payment system integration with JakOne Pay.
 
 ## Overview
 
-LRTJPay is a web application that enables users to manage their LRT payments
-through JakOne Pay integration. The application features user registration, PIN
-management, and secure payment processing.
+LRTJPay is a mobile-optimized web application that enables users to manage their LRT payments through JakOne Pay integration. The application features a responsive, mobile-first design with user registration, PIN management, and secure payment processing, delivering a seamless experience across all devices with special attention to mobile users.
 
 ## Features
 
@@ -25,19 +23,19 @@ management, and secure payment processing.
 
 lrt-pay/
 ├── src/
-│   ├── app/                 # Next.js app directory
+│   ├── app/                # Next.js app directory
 │   │   ├── layout.jsx      # Root layout component
 │   │   ├── page.jsx        # Main page component
 │   │   └── globals.css     # Global styles
 │   ├── components/         # Reusable components
-│   │   ├── Form/          # Form-related components
-│   │   └── Layout/        # Layout components
-│   ├── screens/           # Page-specific screen components
-│   ├── store/             # Redux store configuration
-│   │   └── user/          # User-related redux files
-│   └── helpers/           # Utility functions
-├── public/                # Static assets
-└── config files          # Configuration files
+│   │   ├── Form/           # Form-related components
+│   │   └── Layout/         # Layout components
+│   ├── screens/            # Page-specific screen components
+│   ├── store/              # Redux store configuration
+│   │   └── user/           # User-related redux files
+│   └── helpers/            # Utility functions
+├── public/                 # Static assets
+└── config files            # Configuration files
 
 ```
 
