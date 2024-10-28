@@ -19,9 +19,10 @@ LRTJPay is a mobile-optimized web application that enables users to manage their
 
 ## Project Structure
 
+```
 lrtj-pay/
 ├── src/
-│   ├── app/                # Next.js app directory
+│   ├── app/               # Next.js app directory
 │   │   ├── api/           # API routes
 │   │   │   └── logs/      # Logging endpoints
 │   │   ├── layout.jsx     # Root layout component
@@ -40,6 +41,7 @@ lrtj-pay/
 └── logs/                  # Application logs directory
     ├── error.log          # Error logs
     └── combined.log       # All logs
+```
 
 ## Prerequisites
 
