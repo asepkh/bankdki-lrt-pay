@@ -19,24 +19,27 @@ LRTJPay is a mobile-optimized web application that enables users to manage their
 
 ## Project Structure
 
-```
-
 lrtj-pay/
 ├── src/
 │   ├── app/                # Next.js app directory
-│   │   ├── layout.jsx      # Root layout component
-│   │   ├── page.jsx        # Main page component
-│   │   └── globals.css     # Global styles
-│   ├── components/         # Reusable components
-│   │   ├── Form/           # Form-related components
-│   │   └── Layout/         # Layout components
-│   ├── screens/            # Page-specific screen components
-│   ├── store/              # Redux store configuration
-│   │   └── user/           # User-related redux files
-│   └── helpers/            # Utility functions
-└── public/                 # Static assets
-
-```
+│   │   ├── api/           # API routes
+│   │   │   └── logs/      # Logging endpoints
+│   │   ├── layout.jsx     # Root layout component
+│   │   ├── page.jsx       # Main page component
+│   │   └── globals.css    # Global styles
+│   ├── components/        # Reusable components
+│   │   ├── Form/          # Form-related components
+│   │   └── Layout/        # Layout components
+│   ├── screens/           # Page-specific screen components
+│   ├── store/             # Redux store configuration
+│   │   └── user/          # User-related redux files
+│   ├── services/          # Service layer
+│   │   └── logger.js      # Logging service
+│   └── helpers/           # Utility functions
+└── public/                # Static assets
+└── logs/                  # Application logs directory
+    ├── error.log          # Error logs
+    └── combined.log       # All logs
 
 ## Prerequisites
 
@@ -116,6 +119,28 @@ This project uses:
 - Environment variable protection
 - OTP verification system
 - Secure form handling
+
+## Logging
+
+The application uses Winston for structured logging
+
+Log files are stored in the `logs` directory:
+- `logs/error.log`: Contains error-level logs
+- `logs/combined.log`: Contains all log levels
+
+### Log Levels
+
+- `error`: For errors and exceptions
+- `warn`: For warnings and potential issues
+- `info`: For general information and successful operations
+
+### Security Logging
+
+PIN operations are logged with the following information:
+- Operation type (creation, verification)
+- Masked user identifiers
+- Timestamps
+- Success/failure status
 
 ## License
 

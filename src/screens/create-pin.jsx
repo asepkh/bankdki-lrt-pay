@@ -22,9 +22,13 @@ const CreatePinScreen = () => {
   const dispatch = useDispatch();
 
   const handleSubmitPin = (pin) => {
-    if (pin.length !== 6) return;
+    if (pin.length !== 6) {
+      logger.warn("Invalid PIN length", { length: pin.length });
+      return;
+    }
 
     if (user.screen === "create-pin") {
+      logger.info("Creating new PIN", { userId: user.phoneNumber });
       setPin("");
       const encryptedPin = encryptData(pin);
       dispatch(setUserData({ pin: encryptedPin }));
@@ -32,12 +36,16 @@ const CreatePinScreen = () => {
     } else {
       const storedPin = decryptData(user.pin);
       if (pin === storedPin) {
+        logger.info("PIN verification successful", {
+          userId: user.phoneNumber,
+        });
         router.push("/topup");
         setTimeout(() => {
           dispatch(setUserData({ isLoggedIn: true }));
           dispatch(setUserScreen("input-phone-number"));
-        }, 500); // delay to prevent flashing
+        }, 500);
       } else {
+        logger.error("PIN verification failed", { userId: user.phoneNumber });
         setPin("");
         setShowError(true);
       }
