@@ -1,0 +1,10 @@
+prettier.config.js
+.next
+node_modules
+yarn.lock
+package-lock.json
+public
+.helm
+.cicd
+.vscode
+pnpm-lock.yaml
