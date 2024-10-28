@@ -1,8 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# LRTJPay Application
+
+A Next.js application for LRT payment system integration with JakOne Pay.
+
+## Overview
+
+LRTJPay is a web application that enables users to manage their LRT payments
+through JakOne Pay integration. The application features user registration, PIN
+management, and secure payment processing.
+
+## Features
+
+- User registration with phone number verification
+- OTP verification system
+- Secure PIN creation and management
+- Integration with JakOne Pay
+- Responsive mobile-first design
+- Redux state management
+- Form validation with Formik and Yup
+- Tailwind CSS styling
+
+## Project Structure
+
+```
+
+lrt-pay/
+├── src/
+│   ├── app/                 # Next.js app directory
+│   │   ├── layout.jsx      # Root layout component
+│   │   ├── page.jsx        # Main page component
+│   │   └── globals.css     # Global styles
+│   ├── components/         # Reusable components
+│   │   ├── Form/          # Form-related components
+│   │   └── Layout/        # Layout components
+│   ├── screens/           # Page-specific screen components
+│   ├── store/             # Redux store configuration
+│   │   └── user/          # User-related redux files
+│   └── helpers/           # Utility functions
+├── public/                # Static assets
+└── config files          # Configuration files
+
+```
+
+## Prerequisites
+
+- Node.js 18.x or higher
+- npm, yarn, or pnpm package manager
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd lrt-pay
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Set up environment variables: Create a `.env.local` file in the root
+   directory:
+
+```env
+NEXT_PUBLIC_ENCRYPTION_KEY=your_encryption_key
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +80,47 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the
+result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Runs the development server
+- `npm run build` - Builds the application for production
+- `npm run start` - Starts the production server
+- `npm run lint` - Runs ESLint
+- `npm run lint:fix` - Fixes ESLint issues
+- `npm run format` - Formats code with Prettier
+- `npm run fix` - Runs both lint:fix and format
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js](https://nextjs.org/) - React framework
+- [Redux](https://redux.js.org/) - State management
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Formik](https://formik.org/) - Form management
+- [Yup](https://github.com/jquense/yup) - Form validation
+- [Crypto-JS](https://github.com/brix/crypto-js) - Encryption utilities
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Code Style and Quality
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project uses:
 
-## Deploy on Vercel
+- ESLint for code linting
+- Prettier for code formatting
+- Tailwind CSS class sorting
+- JSX accessibility rules
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Security Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- PIN encryption using CryptoJS
+- Environment variable protection
+- OTP verification system
+- Secure form handling
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for
+details.
