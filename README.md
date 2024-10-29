@@ -10,9 +10,8 @@ LRTJPay is a mobile-optimized web application that enables users to manage their
 
 ## Preview
 
-Demo: https://lrtj-pay.vercel.app/
-
-Video: https://github.com/asepkh/bankdki-lrtj-pay/blob/main/public/preview.mp4
+- Demo: https://lrtj-pay.vercel.app/
+- Video: https://github.com/asepkh/bankdki-lrtj-pay/blob/main/public/preview.mp4
 
 
 ## Features
