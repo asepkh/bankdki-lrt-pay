@@ -11,6 +11,7 @@ import Layout from "@/components/Layout";
 import Popup from "@/components/Popup";
 import cn from "@/helpers/cn";
 import { encryptData, decryptData } from "@/helpers/encryption";
+import logger from "@/services/logger";
 import { setUserData, setUserScreen } from "@/store/user/actions";
 
 const CreatePinScreen = () => {

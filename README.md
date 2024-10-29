@@ -4,7 +4,13 @@ A Next.js application for LRT payment system integration with JakOne Pay.
 
 ## Overview
 
+![LRTJPay](https://github.com/asepkh/bankdki-lrtj-pay/blob/main/public/logo-lrt.png)
+
 LRTJPay is a mobile-optimized web application that enables users to manage their LRT payments through JakOne Pay integration. The application features a responsive, mobile-first design with user registration, PIN management, and secure payment processing, delivering a seamless experience across all devices with special attention to mobile users.
+
+## Preview
+
+https://github.com/asepkh/bankdki-lrtj-pay/blob/main/public/preview.mp4
 
 ## Features
 
