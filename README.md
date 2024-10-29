@@ -10,7 +10,10 @@ LRTJPay is a mobile-optimized web application that enables users to manage their
 
 ## Preview
 
-https://github.com/asepkh/bankdki-lrtj-pay/blob/main/public/preview.mp4
+<video width="100%" controls>
+  <source src="https://github.com/asepkh/bankdki-lrtj-pay/blob/main/public/preview.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Features
 
